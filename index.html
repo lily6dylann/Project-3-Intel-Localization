@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intel: Sustainability Through the Ages</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Simple styles for Intel branding and header -->
+  <style>
+    /* Set a light blue background for the whole page */
+    body {
+      background-color: #f4f8fb; /* Intel-like light blue */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222; /* Dark text for contrast */
+    }
+
+    /* Style the header area */
+    header {
+      background-color: #0068b5; /* Intel blue */
+      color: #fff; /* White text for contrast */
+      padding: 32px 0 24px 0;
+      text-align: center; /* Center all header content */
+    }
+
+    /* Style the Intel logo */
+    header img {
+      width: 120px; /* Set logo width */
+      height: auto; /* Keep aspect ratio */
+      margin-bottom: 16px; /* Space below logo */
+      background: #fff; /* White background for logo contrast */
+      border-radius: 12px;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    /* Style the main headline */
+    header h1 {
+      font-size: 2.2em;
+      margin: 0 0 12px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Style the subheading */
+    header p {
+      font-size: 1.1em;
+      margin: 0 auto;
+      max-width: 500px;
+      color: #e0eefa; /* Lighter text for subheading */
+    }
+
+    /* By default, hide the details */
+    .card-details {
+      display: none; /* Hide this section */
+      background: #e0eefa; /* Light background for visibility */
+      padding: 8px;        /* Add some space inside */
+      margin-top: 8px;     /* Space above the details */
+      border-radius: 6px;  /* Rounded corners for style */
+    }
+
+    /* Show details on hover for desktop */
+    .timeline-card:hover .card-details {
+      display: block; /* Show when hovering */
+    }
+
+    /* Always show details on small screens (mobile) */
+    @media (max-width: 700px) {
+      .card-details {
+        display: block;
+      }
+    }
+
+    /* Make each timeline card bigger and easier to hover */
+    .timeline-card {
+      width: 90%;              /* Make cards wide on the page */
+      max-width: 500px;        /* Don't let them get too wide */
+      margin: 24px auto;       /* Center the cards and add space between */
+      padding: 16px;           /* Add space inside the card */
+      background: #fff;        /* White background for contrast */
+      border: 2px solid #e0eefa; /* Light blue border */
+      border-radius: 10px;     /* Rounded corners */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Soft shadow */
+      min-height: 320px;       /* Make cards tall enough for details */
+      position: relative;      /* Helps with stacking details inside */
+      /* Add transition for smooth transform and shadow changes */
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    /* Make the card pop a bit and grow slightly when hovered */
+    .timeline-card:hover {
+      box-shadow: 0 8px 24px rgba(0,104,181,0.18); /* Bigger, deeper shadow */
+      transform: scale(1.03); /* Slightly increase size */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero Section -->
+  <header>
+    <div>
+      <!-- This image shows the Intel logo at the top of the page -->
+      <img src="https://pngimg.com/uploads/intel/intel_PNG1.png" alt="Intel Logo" />
+      <!-- Main Heading -->
+      <h1>
+        Sustainability Through the Ages
+      </h1>
+
+      <!-- Subheading / Description -->
+      <p>
+        Explore Intel's journey through time, discovering how our commitment
+        to innovation has shaped a more sustainable future for technology 
+        and our planet.
+      </p>
+    </div>
+  </header>
+
+  <!-- Timeline Cards Section -->
+  <section class="timeline-section">
+
+    <!-- Card 1: 1968 -->
+    <div class="timeline-card">
+      <h2>1968</h2>
+      <h3>Intel Founded</h3>
+      <!-- This image shows Intel's founders -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Gordon_Moore_and_Robert_Noyce_at_Intel_SC1_in_Santa_Clara_1970.png" alt="Intel founders Robert Noyce and Gordon Moore" />
+      <p>
+        Robert Noyce and Gordon Moore rename the newly formed company 
+        NM Electronics to Intel Corporation, laying the foundation for 
+        decades of technological innovation.
+      </p>
+      <div class="card-details">
+        <p>
+          Did you know? The name "Intel" comes from "Integrated Electronics."
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2: 1971 -->
+    <div class="timeline-card">
+      <h2>1971</h2>
+      <h3>First Microprocessor</h3>
+      <!-- This image shows the Intel 4004 microprocessor -->
+      <img src="https://plus.unsplash.com/premium_photo-1661908686231-715ac4c34f23?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Intel 4004 microprocessor" />
+      <p>
+        Intel debuts the 4004, the world's first commercial microprocessor, 
+        igniting the microprocessor revolution and propelling the future 
+        of computing devices.
+      </p>
+      <div class="card-details">
+        <p>
+          The 4004 chip had just 2,300 transistors—modern chips have billions!
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3: 1978 -->
+    <div class="timeline-card">
+      <h2>1978</h2>
+      <h3>8086 Processor</h3>
+      <!-- This image shows the Intel 8086 processor -->
+      <img src="https://images.unsplash.com/photo-1666430163005-3cd92302a865?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Intel 8086 processor" />
+      <p>
+        Launch of the 8086 processor, establishing the x86 architecture 
+        that drives countless PCs and servers in the modern era.
+      </p>
+      <div class="card-details">
+        <p>
+          The x86 architecture is still used in most PCs today.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 4: 1985 -->
+    <div class="timeline-card">
+      <h2>1985</h2>
+      <h3>386 Processor</h3>
+      <!-- This image shows the Intel 386 processor -->
+      <img src="https://plus.unsplash.com/premium_photo-1681426698212-53e47fec9a2c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Intel 386 processor" />
+      <p>
+        Intel introduces the 386 processor with 32-bit architecture, 
+        ushering in a new era of performance and multitasking for 
+        personal computers.
+      </p>
+      <div class="card-details">
+        <p>
+          The 386 processor could run multiple programs at once.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 5: 2006 -->
+    <div class="timeline-card">
+      <h2>2006</h2>
+      <h3>Peak GHG Emissions</h3>
+      <!-- This image shows a factory with emissions -->
+      <img src="https://images.unsplash.com/photo-1632372254856-43c6e0d63e87?q=80&w=3027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Factory with emissions" />
+      <p>
+        This year marks Intel's highest annual greenhouse gas emissions 
+        for operations. Over subsequent years, Intel invests heavily in 
+        chemical abatement, renewable energy, and energy-efficient 
+        manufacturing to reverse this trend.
+      </p>
+      <div class="card-details">
+        <p>
+          Intel reduced emissions by investing in renewable energy and new technologies.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 6: 2020 -->
+    <div class="timeline-card">
+      <h2>2020</h2>
+      <h3>RISE Strategy</h3>
+      <!-- This image shows a diverse team working together -->
+      <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?q=80&w=2785&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Diverse team working together" />
+      <p>
+        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
+        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
+        progress on climate action, water stewardship, and waste reduction.
+      </p>
+      <div class="card-details">
+        <p>
+          RISE stands for Responsible, Inclusive, Sustainable, Enabling.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 7: 2022 -->
+    <div class="timeline-card">
+      <h2>2022</h2>
+      <h3>Net-Zero By 2040</h3>
+      <!-- This image shows a globe representing net-zero commitment -->
+      <img src="https://plus.unsplash.com/premium_photo-1672045361016-a8d0c0cd75bd?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Globe representing net-zero commitment" />
+      <p>
+        Intel announces its commitment to achieve net-zero greenhouse 
+        gas emissions (Scope 1 and 2) across its global operations 
+        by 2040, building on years of environmental initiatives.
+      </p>
+      <div class="card-details">
+        <p>
+          Net-zero means balancing emissions produced and removed from the atmosphere.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 8: 2023 -->
+    <div class="timeline-card">
+      <h2>2023</h2>
+      <h3>Renewable Electricity</h3>
+      <!-- This image shows solar panels and renewable energy -->
+      <img src="https://plus.unsplash.com/premium_photo-1679008171612-d17bbf1a31d3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Solar panels and renewable energy" />
+      <p>
+        The company achieves 99% renewable electricity usage worldwide, 
+        helping to drastically lower carbon emissions and driving progress 
+        toward Intel's long-term sustainability goals.
+      </p>
+      <div class="card-details">
+        <p>
+          Renewable electricity comes from sources like wind and solar.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 9: 2024 -->
+    <div class="timeline-card">
+      <h2>2024</h2>
+      <h3>Sustainability Summit</h3>
+      <!-- This image shows a conference and collaboration -->
+      <img src="https://images.unsplash.com/photo-1739287088753-73a9b8b771bc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Conference and collaboration" />
+      <p>
+        Intel hosts its first Sustainability Summit, uniting suppliers, 
+        government officials, and industry leaders to collaborate on 
+        next-generation sustainable semiconductor manufacturing.
+      </p>
+      <div class="card-details">
+        <p>
+          The summit encourages collaboration for a greener future in tech.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
