@@ -85,13 +85,11 @@ header p {
   width: 340px;
   min-width: 220px;
   max-width: 90vw;
-  height: 470px;
   min-height: 320px;
   max-height: 90vw;
   margin: 0 0 30px 0;
   box-sizing: border-box;
   padding: 22px 18px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -201,6 +199,61 @@ header p {
     height: 40vw; /* Just a little bigger */
     min-height: 100px;
     max-height: 180px;
+  }
+}
+
+/* Make the feature cards section match the header and stand out */
+.feature-card {
+  background: #eaf6fb;           /* Light blue, matches header */
+  border: 2px solid #b3d6f5;     /* Soft blue border */
+  border-radius: 18px;           /* Rounded corners */
+  box-shadow: 0 4px 18px rgba(0,87,183,0.10); /* Soft blue shadow */
+  margin: 12px 0;
+  padding: 32px 18px;            /* More padding for bigger cards */
+  text-align: center;            /* Center text and icons */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 32px rgba(0,87,183,0.18); /* Bigger shadow on hover */
+  transform: scale(1.04);                     /* Slightly bigger on hover */
+  background: #d1eaff;                        /* Lighter blue on hover */
+}
+
+.feature-icon {
+  font-size: 3rem;               /* Bigger icons */
+  margin-bottom: 12px;
+  color: #0057b7;                /* Intel blue for icons */
+}
+
+.feature-title {
+  font-size: 2rem;               /* Bigger titles */
+  font-weight: bold;
+  color: #0057b7;                /* Intel blue for titles */
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.feature-btn {
+  font-size: 1.1rem;
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+/* Responsive: stack feature cards on small screens */
+@media (max-width: 800px) {
+  .feature-card {
+    padding: 18px 8px;
+    font-size: 1em;
+  }
+  .feature-title {
+    font-size: 1.3rem;
+  }
+  .feature-icon {
+    font-size: 2rem;
   }
 }
 
